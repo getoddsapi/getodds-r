@@ -1,0 +1,14 @@
+Package: getodds
+Type: Package
+Title: Bounded Reads from the GetOdds Sports Data Gateway
+Version: 0.4.0
+Authors@R: person("GetOdds", "Team", role = c("aut", "cre"), email = "support@getoddsapi.com")
+Description: Reads four scoped player-threshold samples and stored DraftKings sportsbook
+    resources with explicit limits, response validation and sanitized errors.
+    Does not automatically retry requests or retrieve additional pages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: curl, jsonlite
+URL: https://getoddsapi.com, https://github.com/getoddsapi/getodds-r
+BugReports: https://github.com/getoddsapi/getodds-r/issues

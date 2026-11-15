@@ -1,0 +1,299 @@
+[
+  [
+    "events/{id}/state",
+    {
+      "id": "espn-draftkings:espn:NBA:123"
+    },
+    {
+      "data": [
+        {
+          "event_id": "espn-draftkings:espn:NBA:123",
+          "state": "pre",
+          "completed": false,
+          "source_status": "STATUS_SCHEDULED",
+          "starts_at": "2026-11-07T00:00:00.000Z"
+        }
+      ],
+      "meta": {
+        "source": "draftkings",
+        "transport": "live_espn_summary",
+        "metadata_provider": "espn",
+        "canonical_cross_provider_identity": false,
+        "settlement_verified": false,
+        "receipt_time_is_source_freshness": false,
+        "observed_at": "2026-11-07T00:00:00.000Z",
+        "source_updated_at": null
+      },
+      "request_id": "fixture"
+    }
+  ],
+  [
+    "participants",
+    {
+      "event_id": "espn-draftkings:espn:NBA:123"
+    },
+    {
+      "data": [
+        {
+          "id": "espn:NBA:team:1",
+          "event_id": "espn-draftkings:espn:NBA:123",
+          "type": "team",
+          "name": "Team",
+          "side": "home",
+          "native_id": "1",
+          "identity_provider": "espn",
+          "league": "NBA"
+        },
+        {
+          "id": "espn:NBA:team:2",
+          "event_id": "espn-draftkings:espn:NBA:123",
+          "type": "team",
+          "name": "Team",
+          "side": "away",
+          "native_id": "2",
+          "identity_provider": "espn",
+          "league": "NBA"
+        }
+      ],
+      "meta": {
+        "source": "draftkings",
+        "transport": "live_espn_summary",
+        "metadata_provider": "espn",
+        "canonical_cross_provider_identity": false,
+        "settlement_verified": false,
+        "receipt_time_is_source_freshness": false,
+        "observed_at": "2026-11-07T00:00:00.000Z",
+        "source_updated_at": null
+      },
+      "request_id": "fixture"
+    }
+  ],
+  [
+    "participants/{id}",
+    {
+      "event_id": "espn-draftkings:espn:NBA:123",
+      "id": "espn:NBA:team:1"
+    },
+    {
+      "data": [
+        {
+          "id": "espn:NBA:team:1",
+          "event_id": "espn-draftkings:espn:NBA:123",
+          "type": "team",
+          "name": "Team",
+          "side": "home",
+          "native_id": "1",
+          "identity_provider": "espn",
+          "league": "NBA"
+        }
+      ],
+      "meta": {
+        "source": "draftkings",
+        "transport": "live_espn_summary",
+        "metadata_provider": "espn",
+        "canonical_cross_provider_identity": false,
+        "settlement_verified": false,
+        "receipt_time_is_source_freshness": false,
+        "observed_at": "2026-11-07T00:00:00.000Z",
+        "source_updated_at": null
+      },
+      "request_id": "fixture"
+    }
+  ],
+  [
+    "odds/replay",
+    {
+      "after": "9007199254740993",
+      "through": "9007199254740994"
+    },
+    {
+      "data": [
+        {
+          "seq": "9007199254740994",
+          "offer_id": "offer:1",
+          "event_id": "espn-draftkings:espn:NBA:123",
+          "observed_at": "2026-11-07T00:00:00.000Z",
+          "decimal": 1.91,
+          "american": -110
+        }
+      ],
+      "meta": {
+        "source": "draftkings",
+        "transport": "stored_espn_draftkings",
+        "checked_at": "2026-11-07T00:00:00.000Z",
+        "source_capture_complete": false,
+        "deletion_events_available": false,
+        "snapshot_consistent": false
+      },
+      "pagination": {
+        "limit": 50,
+        "after": "9007199254740993",
+        "through": "9007199254740994",
+        "next_after": "9007199254740994",
+        "has_more": false,
+        "replay_complete": true
+      },
+      "request_id": "fixture"
+    }
+  ],
+  [
+    "sportsbook/markets",
+    {
+      "league": "NBA",
+      "family": "PLAYER_POINTS"
+    },
+    {
+      "data": [
+        {
+          "id": "market:1",
+          "event_id": "event:1",
+          "sport": "Basketball",
+          "league": "NBA",
+          "starts_at": "2026-11-07T00:00:00.000Z",
+          "is_future": false,
+          "observed_at": "2026-11-07T00:00:00.000Z",
+          "changed_at": "2026-11-07T00:00:00.000Z",
+          "market_status": "open",
+          "selections": [
+            {
+              "id": "runner:1",
+              "status": "active",
+              "american": -110,
+              "decimal": 1.91,
+              "line": null,
+              "fair": null
+            }
+          ],
+          "event_read_at": null
+        }
+      ],
+      "meta": {
+        "source": "fanduel",
+        "identity": "source_native",
+        "capture_complete": false,
+        "checked_at": "2026-11-07T00:00:00.000Z"
+      },
+      "pagination": {
+        "limit": 50,
+        "has_more": false,
+        "next_after": null,
+        "snapshot_consistent": false
+      },
+      "request_id": "fixture"
+    }
+  ],
+  [
+    "outrights",
+    {},
+    {
+      "data": [
+        {
+          "id": "market:1",
+          "event_id": "event:1",
+          "sport": "Basketball",
+          "league": "NBA",
+          "starts_at": "2026-11-07T00:00:00.000Z",
+          "is_future": true,
+          "observed_at": "2026-11-07T00:00:00.000Z",
+          "changed_at": "2026-11-07T00:00:00.000Z",
+          "market_status": "open",
+          "selection_count": 1,
+          "event_read_at": null
+        }
+      ],
+      "meta": {
+        "source": "fanduel",
+        "identity": "source_native",
+        "capture_complete": false,
+        "checked_at": "2026-11-07T00:00:00.000Z"
+      },
+      "pagination": {
+        "limit": 50,
+        "has_more": false,
+        "next_after": null,
+        "snapshot_consistent": false
+      },
+      "request_id": "fixture"
+    }
+  ],
+  [
+    "outrights/odds",
+    {},
+    {
+      "data": [
+        {
+          "id": "market:1",
+          "event_id": "event:1",
+          "sport": "Basketball",
+          "league": "NBA",
+          "starts_at": "2026-11-07T00:00:00.000Z",
+          "is_future": true,
+          "observed_at": "2026-11-07T00:00:00.000Z",
+          "changed_at": "2026-11-07T00:00:00.000Z",
+          "market_status": "open",
+          "selections": [
+            {
+              "id": "runner:1",
+              "status": "active",
+              "american": -110,
+              "decimal": 1.91,
+              "line": null,
+              "fair": null
+            }
+          ],
+          "event_read_at": null
+        }
+      ],
+      "meta": {
+        "source": "fanduel",
+        "identity": "source_native",
+        "capture_complete": false,
+        "checked_at": "2026-11-07T00:00:00.000Z"
+      },
+      "pagination": {
+        "limit": 50,
+        "has_more": false,
+        "next_after": null,
+        "snapshot_consistent": false
+      },
+      "request_id": "fixture"
+    }
+  ],
+  [
+    "events/live",
+    {
+      "sport": "Basketball"
+    },
+    {
+      "data": [
+        {
+          "id": "event:1",
+          "sport": "Basketball",
+          "league": "NBA",
+          "name": "Game",
+          "starts_at": "2026-11-07T00:00:00.000Z",
+          "observed_in_play": true,
+          "metadata_ambiguous": false,
+          "qualifying_market_observed_at": "2026-11-07T00:00:00.000Z",
+          "qualifying_market_changed_at": "2026-11-07T00:00:00.000Z",
+          "event_read_at": null
+        }
+      ],
+      "meta": {
+        "source": "fanduel",
+        "identity": "source_native",
+        "capture_complete": false,
+        "checked_at": "2026-11-07T00:00:00.000Z",
+        "completion_available": false,
+        "freshness_window_minutes": 15
+      },
+      "pagination": {
+        "limit": 50,
+        "has_more": false,
+        "next_after": null,
+        "snapshot_consistent": false
+      },
+      "request_id": "fixture"
+    }
+  ]
+]
